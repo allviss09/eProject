@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Fitness Template
+http://www.templatemo.com/tm-487-fitness
+-->
+<title>PrimeFitness</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/shoppingcart.js"></script>
+<script src="js/validator.js"></script>
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lora:700italic' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50" ng-app="shcart" ng-controller="myController">
+
+
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div  class="preloader">
+
+	<div class="sk-spinner sk-spinner-pulse"></div>
+
+</div>
+
+
+<!-- =========================
+    NAVIGATION SECTION   
+============================== -->
+<div class="navbar navbar-inverse navbar-fixed-top sticky-navigation" role="navigation"> <!--Navbar fix top-->
+	<div class="container"> 
+
+		<div class="navbar-header col-md-4 col-sm-6">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+				<h3><a href="Home.html" class="navbar-brand"><strong>Prime</strong><sub style="color: greenyellow;">Fitness</sub></a></h3>
+				
+				
+		</div>
+		<div class="topnav col-md-8 col-sm-6">
+			<a href="#" ><i style="font-size: 25px;" class="fa fa-shopping-cart" aria-hidden="true"></i><sup style="font-size: 25px;"><span class="badge badge-light">{{count}}</span></sup></a>
+			<a href="Enquiry.html">Enquiry</a>
+			<a href="#">Quote</a>
+			<a href="#myRegister" data-toggle="modal">Register</a>
+			<a href="#myLogin" data-toggle="modal">Login</a>
+			<a href="Sitemap.html">SiteMap</a>
+		  </div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right main-navigation">
+				<li><a href="Home.html" class="smoothScroll">Home</a></li>
+				<li class="dropdown">
+					<a href="#"  class="dropdown-toggle" data-toggle="dropdown">Training<span class=" caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="Cycling.html">Cycling</a></li>
+						<li><a href="SportFitness.html">Sports&Fitness</a></li>
+						<li><a href="Swimming.html">Swimming</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="smoothScroll">GroupExercise</a></li>
+				<li><a href="#" class="smoothScroll">Membership</a></li>
+				<li><a href="Salonspa.html" class="smoothScroll">Salon&Spa</a></li>
+				<li><a href="Gallery.html" class="smoothScroll">Gallery</a></li>
+				<li><a href="Product.html" class="smoothScroll">Product</a></li>
+				<li><a href="Aboutus.html" class="smoothScroll">About us</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- =========================
+    HOME SECTION   
+============================== -->
+<section id="home" class="parallax-section"> <!--body all parallax scroll-->
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-1 col-md-10 col-sm-12">
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">Hello! You are welcome to</h3>
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">PRIME<br>Fitness Club</h1>
+				<a href="#overview" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="2s">Learn More</a>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    OVERVIEW SECTION   
+============================== -->
+<section id="overview" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-sm-12">
+				<img src="images/overview-img.jpg" class="img-responsive" alt="Overview">
+				<blockquote class="wow fadeInUp" data-wow-delay="1.9s">Fitness is the condition of being physically fit and healthy</blockquote>
+			</div>
+
+			<div class="col-md-1"></div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-12" data-wow-delay="1s">
+				<div class="overview-detail">
+					<h2>About PRIME</h2>
+					<p>-PRIME’s SmartStrength Technology</p>
+					<p>-American-Made Quality</p>
+					<p>-Add Value to Your Facility</p>
+					<p>-Better Results for Your Members</p>
+					<p>-More Efficient Workouts for Your Members</p>
+					<a href="#trainer" class="btn btn-default smoothScroll">Best Chooses</a>
+				</div>
+			</div>
+
+			<div class="col-md-1"></div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    TRAINER SECTION   
+============================== -->
+<section id="trainer" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.3s">
+				<h2>our Best Trainers</h2>
+				<p>Trainer is necesssary for the good training.</p>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1.9s">
+				<div class="trainer-thumb">
+					<img src="images/trainer-img1.jpg" class="img-responsive" alt="Trainer">
+						<div class="trainer-overlay">
+							<div class="trainer-des">
+								<h2>Jenny</h2>
+								<h3>Body Trainer</h3>
+								<ul class="social-icon">
+									<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+									<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+									<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<p>Jenny is our best body trainer, with lots of experience. Jenny can supply you with fit diet, training, and select products.</p>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="2s">
+				<div class="trainer-thumb">
+					<img src="images/trainer-img2.jpg" class="img-responsive" alt="Trainer">
+						<div class="trainer-overlay">
+							<div class="trainer-des">
+								<h2>Marry</h2>
+								<h3>Fitness Trainer</h3>
+								<ul class="social-icon">
+									<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+									<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+									<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<p>Marry is one of the best fitness trainer in PRIME. She can help you make a choice, which suitable with your body. </p>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="2.3s">
+				<div class="trainer-thumb">
+					<img src="images/trainer-img3.jpg" class="img-responsive" alt="Trainer">
+						<div class="trainer-overlay">
+							<div class="trainer-des">
+								<h2>Olivia</h2>
+								<h3>Yoga Teacher</h3>
+								<ul class="social-icon">
+									<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+									<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+									<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<p>If you want yoga teacher with more experience. Olivia is best choice for you. </p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+    BLOG SECTION   
+============================== -->
+<section id="blog" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12 text-center">
+				<h2>Fitness Blog</h2>
+				<p><b>Some useful blog</b></p>
+			</div>
+
+			<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.9s">
+				<div class="blog-thumb">
+					<span class="blog-date">Body Fitness / Dec 10, 2020</span>
+					<h3 class="blog-title"><a href="#">How to get a fitness model body?</a></h3>
+					<h5 id="blog-author">by David Walker</h5>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.3s">
+				<div class="blog-thumb">
+					<span class="blog-date">Healthy Fit / Dec 8, 2020</span>
+					<h3 class="blog-title"><a href="#">Personal Fitness Tips</a></h3>
+					<h5 id="blog-author">by George</h5>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.6s">
+				<div class="blog-thumb">
+					<span class="blog-date">Gym Services / Nov 9, 2020</span>
+					<h3 class="blog-title"><a href="#">Efficient Workout Plans</a></h3>
+					<h5 id="blog-author">by Mary Louis</h5>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.9s">
+				<div class="blog-thumb">
+					<span class="blog-date">Practice Aerobics / Noc 5, 2020</span>
+					<h3 class="blog-title"><a href="#">How to practice Aerobics?</a></h3>
+					<h5 id="blog-author">by Michael Fit</h5>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    TESTIMONIAL SECTION   
+============================== -->
+<section id="testimonial" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Testimonial Owl Carousel section
+			================================================== -->
+			<div id="owl-testimonial" class="owl-carousel">
+
+				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
+					<i class="fa fa-quote-left"></i>
+					<h3>The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.</h3>
+					<h4><span style="color:olivedrab; font-weight: bolder;">Arnold Schwarzenegger</span> (7th Mr.Olympia )</h4>
+				</div>
+
+				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
+					<i class="fa fa-quote-left"></i>
+					<h3>The clock is ticking. Are you becoming the person you want to be?</h3>
+					<h4><span style="color:olivedrab; font-weight: bolder;">Greg Plitt</span>(Fitness model)</h4>
+				</div>
+
+				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
+					<i class="fa fa-quote-left"></i>
+					<h3>Training gives us an outlet for suppressed energies created by stress and thus tones the spirit just as exercise conditions the body.</h3>
+					<h4><span style="color:olivedrab; font-weight: bolder;">Arnold Schwarzenegger</span> (7th Mr.Olympia )</h4>
+				</div>
+
+				<div class="item col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeInUp" data-wow-delay="0.6s">
+					<i class="fa fa-quote-left"></i>
+					<h3>Success isn’t always about greatness. It’s about consistency. Consistent hard work gains success. Greatness will come.</h3>
+					<h4><span style="color:olivedrab; font-weight: bolder;">Dwayne "The Rock" Johnson</span></h4>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    FOOTER SECTION   
+============================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+				<h2>About Fitness</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d772.1097988255611!2d106.67421287757489!3d10.78168312716755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed7b0dde4f5%3A0x24b8f40a5de3f000!2zMzUwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDEwLCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1608349465694!5m2!1svi!2s" width="350" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+
+			<div class="wow fadeInUp col-md-5 col-sm-4"  data-wow-delay="0.9s">
+				<h2>Sessions</h2>
+					<div>
+						<h5>M O N D A Y - F R I D A Y</h5>
+						<h4>6:00 AM - 10:00 PM</h4>
+					</div>
+					<div>
+						<h5>S A T U R D A Y - S U N D A Y</h5>
+						<h4>7:00 AM - 9:00 PM</h4>
+					</div>
+				
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="1s">
+				<h2>Follow us</h2>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="1s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="1.6s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
+					<li><a href="#" class="fa fa-google-plus wow fadeIn" data-wow-delay="2s"></a></li>
+				</ul>
+			
+			<!------------------------------------------------------------------------------>
+					<p>  <i class="fa fa-map-marker" aria-hidden="true"></i>
+				   	<b>350 Cách Mạng Tháng Tám Phường 10 Quận 3 Thành Phố Hồ Chí Minh</b></p>
+				   	<p>  <i class="fa fa-phone" aria-hidden="true"></i>
+				   	<b>225-522-2552</b</p>
+				   	<p> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+				   	<b>Contact@primefit.com</b></p>
+			</div>
+			<div class="wow fadeInUp col-md-12 col-sm-4" data-wow-delay="1s">	   
+					<h2>Payment methods</h2> 
+					<img src="https://s3-hd.hotdeal.vn/original/2017/11/1/5a0a64b85c310-card-visa.png">
+					<img src="https://s3-hd.hotdeal.vn/original/2017/11/1/5a0a64b85c007-card-master.png">
+					<img src="https://s3-hd.hotdeal.vn/original/2017/11/1/5a0a64b85c20d-card-onepay.png">
+					<img src="https://s3-hd.hotdeal.vn/original/2019/11/2/5de0ea786e382-card-payoo.png">
+					<img src="https://s3-hd.hotdeal.vn/original/2017/11/1/5a0a64b85c115-card-money.png">
+					<img src="https://s3-hd.hotdeal.vn/original/2019/11/2/5de0ea786e47e-card-vnpay.png">
+			</div>
+			<div class="clearfix">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="copyright-text">Copyright &copy; 2020 Your Company 
+                    
+                    | Design: Group05</p>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+<!--================================
+	Modal Register
+====================================-->
+<div id="myRegister" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="images/Avatar.png" title="Avatar">
+				</div>				
+				<h4 class="modal-title">Register Form</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="" method="post" name="form" onsubmit="return register()">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Username">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Password">	
+					</div>   
+					<div class="form-group">
+						<input type="password" class="form-control" name="cnfpassword" placeholder=" Confirm Password">	
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="phone" placeholder=" Phone Number">	
+					</div>           
+					<div style="padding: 10px;" class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Register Form</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div> 
+
+<!--==============================
+	Modal Login
+==================================-->
+<div id="myLogin" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="images/Avatar.png" title="Avatar">
+				</div>				
+				<h4 class="modal-title">Login Form</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="" method="post" name="loginform" onsubmit="return login()">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Username">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Password">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>  
+<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
